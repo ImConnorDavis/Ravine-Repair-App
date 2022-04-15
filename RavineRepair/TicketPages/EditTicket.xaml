@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="RavineRepair.TicketPages.EditTicket">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="Start">
+                <Frame BorderColor="Black" HasShadow="False">
+                    <StackLayout>
+                        <Label x:Name="TicketName" HorizontalOptions="Center" FontAttributes="Bold"/>
+                        <Label x:Name="TicketAddress" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label x:Name="TicketDescription" HorizontalTextAlignment="Center" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="End">
+                <Frame VerticalOptions="End" BorderColor="Black" HasShadow="False">
+                    <StackLayout>
+                        <Label Text="Ticket Completed?" VerticalOptions="End" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Switch x:Name="SetSwitch" Toggled="OnSwitched" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
